@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+			<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="./css/style.css"/>
+        <title>Criação de Sites</title>
+    </head>
+    <body>
+<main class="main">
+	<section class="calc-imc">
+		<h1>Calculadora IMC</h1>
+		<div>
+			<img src="imagem/obesidade3.jpg"/>
+		  </div>
+		<form class="form" id="form">
+            <label for="altura">
+				Nome
+				<input name="nome" id="nome" placeholder="Digite o nome" type="text" />
+			<label for="kg">
+				Kg
+				<input name="kg"  id="kg" placeholder="Peso atual" type="number" />
+			</label>
+			<label for="altura">
+				Altura
+				<input name="altura" id="altura" placeholder="Altura em centímetros" type="number" />
+			</label>
+			<button onclick="calcularIMC()" type="button">Calcular</button>
+            <button onclick="limparCampos()" type="button">Limpar campos</button>
+		</form>
+	</section>
+
+    
+    <div>
+		<table>
+		<thead>
+			<tr>
+				
+				<th>Nome</th>
+				<th>Peso</th>
+				<th>Altura</th>
+				<th>IMC</th>
+				<th>Resultado</th>
+			</tr>
+		</thead>
+		<tbody id="tabela">
+
+
+
+		</tbody>
+		</table>
+
+    </div>
+
+
+</main>
+    </body>
+    <script src="./js/script.js"></script>
+</html>
